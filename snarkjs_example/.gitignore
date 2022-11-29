@@ -1,0 +1,16 @@
+node_modules/
+
+
+*.ptau
+*.wtns
+*.zkey
+*.r1cs
+*.sym
+*.wasm
+
+**/proof.json
+**/public.json
+**/verification_key.json
+
+**/witness_calculator.js
+**/generate_witness.js
