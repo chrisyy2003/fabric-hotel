@@ -1,0 +1,18 @@
+@font-face {
+	font-family: "custom-icon";
+	src: url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAJsAAsAAAAABigAAAIiAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAowTQE2AiQDCAsGAAQgBYRtBzEbdAURBQTJfhzGjukjkc21RvuCZIgS/zmCar/Pnt19cIQKUV2dBIwiUswq9tuoRLpECXKso//WdB3uMSaa0SU533qW7cx/x0zDOo8S2K0MCImQpIqGtQGX059AD7I6oNz2pLEmjwkYWBrgXhhFVkIZN+guYkTy1WMCvWZsiVP/3DWtAqwKxMviyT2tFVGULN8K9cjBIj6ptOlD+uAj/378sx0tSZWBpkuPzzx0+BMsyp1ux01KiBKi4xUytlCIa6OZC7LIuKw3Uyzwrvrgp26XusVbHSL760BtP5gKs8FP+IgACRQ52YuBXbeSquq9NmjkbQzF8PO/b17vbNyo1yHws/wl/RMI4tz1Rzi0+7/tK+Br585ye7HOR3upN/gFqpUDpdUAVyq1atSX9O5amdCrF11xYNT3vdaJ7xVCa+Krvsa0RtZaIgu7hUqfHdRa5QGETcHxiTHEFKUHbeoSIAx7Ixn0GdmwL1nYHyqT/qgNh4leN2Lswj4rUYgTwpgxg+QMRdq1EnlYiPoVqn0dk6nh/A5pLOLgWo6bD7BFOmPLeFAeswRJXQN+8BzWdQc9dSWmbOXM/dK25dibrLRrNOEEQTGGMiBxBgqpTkvS8Ux4n19Byl4tRjMtG/kdREbF9MBlcVaQgbFd1fItr4wOFA9jEpBIpwH8YB6q1TqgH59XQilmyXekeks2HCXXGq37zc0PVGQdAJsRcGbWvCsw38etpgE=') format('woff2');
+}
+
+.custom-icon {
+	/* 引用上面声明的"custom-icon"字体 */
+	font-family: "custom-icon" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.custom-icon-qiehuan:before {
+  content: "\e62a";
+}
+

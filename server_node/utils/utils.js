@@ -48,6 +48,7 @@ export async function getGateway(channelName, userName) {
     
     return await gateway.getNetwork(channelName);
 }
+
 // let network = await getGateway('mychannel', 'admin');
 // let contract = network.getContract('hotel');
 

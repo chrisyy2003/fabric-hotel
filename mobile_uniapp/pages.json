@@ -1,0 +1,393 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/index/message",
+			"style": {
+				"navigationBarTitleText": "一键吐槽",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		// #ifndef APP-PLUS-NVUE
+		{
+			"path": "pages/index/map",
+			"style": {
+				"navigationBarTitleText": "周边配套",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		// #endif
+		// #ifdef APP-PLUS
+		{
+			"path": "pages/index/nmap",
+			"style": {
+				"navigationBarTitleText": "周边配套",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		// #endif
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/my/profile",
+			"style": {
+				"navigationBarTitleText": "个人资料",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/my/gettoken",
+			"style": {
+				"navigationBarTitleText": "获取代币",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},{
+			"path": "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
+			"style": {
+				"navigationBarTitleText": "头像裁剪",
+				"navigationBarBackgroundColor": "#000000"
+			}
+		}, {
+			"path": "pages/login/auth",
+			"style": {
+				"navigationBarTitleText": "微信授权",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/login/forgetpwd",
+			"style": {
+				"navigationBarTitleText": "忘记密码",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/login/mobilelogin",
+			"style": {
+				"navigationBarTitleText": "验证码登录",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		// #ifdef MP-WEIXIN
+		{
+			"path": "pages/login/wxlogin",
+			"style": {
+				"navigationBarTitleText": "授权",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		// #endif
+		{
+			"path": "pages/my/agreement",
+			"style": {
+				"navigationBarTitleText": "用户协议",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/signin/signin",
+			"style": {
+				"navigationBarTitleText": "签到",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/signin/logs",
+			"style": {
+				"navigationBarTitleText": "签到日志",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/signin/ranking",
+			"style": {
+				"navigationBarTitleText": "排行榜",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/webview/webview",
+			"style": {
+				"navigationBarTitleText": "webview",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/hotel/hotel",
+			"style": {
+				"navigationBarTitleText": "房间列表",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/hotel/detail",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/hotel/booking",
+			"style": {
+				"navigationBarTitleText": "立即预定",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/hotel/checkout",
+			"style": {
+				"navigationBarTitleText": "一键退房",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/lodger/lodger",
+			"style": {
+				"navigationBarTitleText": "住客信息",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/lodger/addoredit",
+			"style": {
+				"navigationBarTitleText": "编辑",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/houseorder",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/payment",
+			"style": {
+				"navigationBarTitleText": "立即支付",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/housedetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/remark/remark",
+			"style": {
+				"navigationBarTitleText": "添加评论",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/remark/lists",
+			"style": {
+				"navigationBarTitleText": "评论列表",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/collect",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/store/store",
+			"style": {
+				"navigationBarTitleText": "门店列表",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/store/detail",
+			"style": {
+				"navigationBarTitleText": "门店详情",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/store/cutlist",
+			"style": {
+				"navigationBarTitleText": "选择门店",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/wifi/wifi",
+			"style": {
+				"navigationBarTitleText": "一键wifi",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/coupon/coupon",
+			"style": {
+				"navigationBarTitleText": "优惠券",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/coupon/user",
+			"style": {
+				"navigationBarTitleText": "我的优惠券",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/coupon/detail",
+			"style": {
+				"navigationBarTitleText": "优惠券详情",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/score/score",
+			"style": {
+				"navigationBarTitleText": "我的积分",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/score/logs",
+			"style": {
+				"navigationBarTitleText": "积分日志",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/score/exchange",
+			"style": {
+				"navigationBarTitleText": "积分兑换",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/score/order",
+			"style": {
+				"navigationBarTitleText": "兑换订单",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"mp-alipay": {
+			/* 支付宝小程序特有相关 */
+			"transparentTitle": "always",
+			"allowsBounceVertical": "NO"
+		},
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "FastAdmin",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"usingComponts": true,
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "开发模式", //模式名称
+			"path": "pages/wifi/wifi", //启动页面
+			"query": "id=2" //启动参数
+		}]
+	}
+}
