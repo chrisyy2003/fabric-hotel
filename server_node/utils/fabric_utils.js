@@ -1,14 +1,55 @@
+const { Gateway, Wallets } = require('fabric-network');
+const FabricCAServices = require('fabric-ca-client');
+const fs = require('fs');
+const path = require('path');
 
-import { Wallets }  from 'fabric-network'
-import FabricCAServices from 'fabric-ca-client';
-import * as utils from './utils.js';
-import path from 'path';
+
+function getccp () {
+    // load the network configuration
+    const ccpPath = path.resolve(__dirname, '..', '..', 'fabric_network','test-network', 'organizations', 'peerOrganizations', 'org1.example.com', 'connection-org1.json');
+    const ccp = JSON.parse(fs.readFileSync(ccpPath, 'utf8'));
+
+    return ccp;
+}
+
+async function getWallet () {
+    // Create a new file system based wallet for managing identities.
+    const walletPath = path.join(__dirname, 'wallet');
+    const wallet = await Wallets.newFileSystemWallet(walletPath);
+    return wallet;
+}
 
 
-export async function enrollAdmin() {
+async function getUserWallet (name) {
+    const wallet = await getWallet();
+    // Check to see if we've already enrolled the user.
+    const identity = await wallet.get(name);
+    if (!identity) {
+        throw `找不到用户 ${name} 的wallet`
+    }
+    return identity;
+}
+
+
+async function getGateway(channelName, userName) {
+    const ccp = getccp();
+    const wallet = await getWallet();
+    try {
+        const userWallet = await getUserWallet(userName);
+    }catch (error) {
+        await registerUser(userName);
+    }
+
+    const gateway = new Gateway();
+    await gateway.connect(ccp, { wallet, identity: userName, discovery: { enabled: true, asLocalhost: true } });
+    
+    return await gateway.getNetwork(channelName);
+}
+
+async function enrollAdmin () {
     try {
         // load the network configuration
-        const ccp = utils.getccp()
+        const ccp = getccp()
         
         // Create a new CA client for interacting with the CA.
         const caInfo = ccp.certificateAuthorities['ca.org1.example.com'];
@@ -48,8 +89,8 @@ export async function enrollAdmin() {
 
 
 
-export async function registerUser(userName) {
-    const ccp = utils.getccp();
+async function registerUser(userName) {
+    const ccp = common.getccp();
 
     // Create a new CA client for interacting with the CA.
     const caURL = ccp.certificateAuthorities['ca.org1.example.com'].url;
@@ -101,3 +142,12 @@ export async function registerUser(userName) {
     await wallet.put(userName, x509Identity);
     console.log(`Successfully registered and enrolled admin user ${userName} and imported it into the wallet`);
 }
+
+
+module.exports = {
+    getccp,
+    getWallet,
+    getWallet,
+    getGateway,
+}
+

@@ -1,8 +1,8 @@
 
 
 
-import express from 'express';
-import * as tokenRouter from './routes/token.js';
+const express = require('express');
+const tokenRouter = require('./routes/token');
 
 const app = express()
 const port = 3000

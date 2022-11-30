@@ -1,8 +1,6 @@
-import express from 'express';
-import { BlockDecoder } from 'fabric-common';
-import * as utils from '../utils/utils.js';
+const { BlockDecoder } = require('fabric-common');
+const utils = require('../utils/fabric_utils');
 
-export const router = express.Router();
 
 async function getTrxDetailById(id) {
     const channel_id = 'mychannel';
@@ -31,9 +29,11 @@ async function getTrxDetailById(id) {
     }
 }
 
+// async function main() {
+//     console.log(await getTrxDetailById('2fd5b60742d59d74937f33f53556864d09637fecb0c4bc73cfec681c4befae72'));
+// }
+// main()
 
-let r = await getTrxDetailById('19017494fdc4ec94d84dc8213c71aefe071bbf95374738cb240e6a1a4662aad9');
-console.log(r);
 
 
 

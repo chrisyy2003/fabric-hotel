@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "server",
   "version": "1.0.0",
   "description": "",
@@ -14,6 +13,7 @@
     "fabric-ca-client": "^2.2.16",
     "fabric-common": "^2.2.16",
     "fabric-network": "^2.2.16",
+    "merkletreejs": "^0.3.8",
     "mysql2": "^2.3.3",
     "sequelize": "^6.25.8"
   }
