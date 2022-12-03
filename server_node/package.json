@@ -9,6 +9,7 @@
   "author": "chrisyy",
   "license": "ISC",
   "dependencies": {
+    "circomlibjs": "^0.1.7",
     "express": "^4.18.2",
     "fabric-ca-client": "^2.2.16",
     "fabric-common": "^2.2.16",

@@ -1,8 +1,9 @@
 pragma circom 2.0.0;
 
 include "./get_merkle_root.circom"; // 导入 getMerkleRoot 电路
-include "../circomlib/circuits/mimc.circom"; //引入 mimc hash算法
-include "../circomlib/circuits/bitify.circom";
+include "../../server_node/node_modules/circomlib/circuits/mimc.circom"
+include "../../server_node/node_modules/circomlib/circuits/bitify.circom"
+
 
 
 

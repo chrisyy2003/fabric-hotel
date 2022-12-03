@@ -7,6 +7,5 @@ template Mult() {
     c <== a * b;
  }
 
-
 component main = Mult();
 

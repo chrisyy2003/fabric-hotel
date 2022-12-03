@@ -1,6 +1,7 @@
 pragma circom 2.0.0;
 
-include "../circomlib/circuits/mimc.circom"; //引入 mimc hash算法
+include "../../server_node/node_modules/circomlib/circuits/mimc.circom"
+// include "../circomlib/circuits/mimc.circom"; //引入 mimc hash算法
 
 template GetMerkleRoot(k){
     // k 是Merkle tree 的深度 
